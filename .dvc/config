@@ -1,4 +1,0 @@
-[core]
-    autostage = true
-['remote "gdrive"']
-    url = gdrive://1tbx0ti-m6ilir_bfMHJ-t-z6WF-D5hCE
