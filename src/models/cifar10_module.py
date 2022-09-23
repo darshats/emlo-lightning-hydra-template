@@ -85,7 +85,7 @@ class Cifar10LitModule(LightningModule):
         acc = self.val_acc(preds, targets)
         self.log("val/loss", loss, on_step=False, on_epoch=True, prog_bar=False)
         self.log("val/acc", acc, on_step=False, on_epoch=True, prog_bar=True)
-
+        self.log("hp_metric", acc)
         return {"loss": loss, "preds": preds, "targets": targets}
 
     def validation_epoch_end(self, outputs: List[Any]):
