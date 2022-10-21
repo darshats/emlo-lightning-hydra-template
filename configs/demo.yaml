@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - datamodule: mnist.yaml
+  - model: mnist.yaml # very important
+  - callbacks: default.yaml
+  - logger: null
+  - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+  - experiment: mnist.yaml
+
+task_name: "demo"
+
+# checkpoint is necessary for demo
+ckpt_path: /home/dshah/emlo-lightning-hydra-template/logs/train/runs/2022-09-24_11-34-05/checkpoints/epoch_000.ckpt

@@ -1,6 +1,7 @@
 from typing import Any, List
 
 import torch
+from torchvision import transforms as T
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric
 from torchmetrics.classification.accuracy import Accuracy
@@ -45,9 +46,24 @@ class Cifar10LitModule(LightningModule):
 
         # for logging best so far validation accuracy
         self.val_acc_best = MaxMetric()
+        self.predict_transform = torch.nn.Sequential(
+            T.Normalize((0.1307,), (0.3081,))
+            )
 
     def forward(self, x: torch.Tensor):
         return self.net(x)
+
+    @torch.jit.export
+    def forward_jit(self, x: torch.Tensor):
+        with torch.no_grad():
+            # transform the inputs
+            x = self.predict_transform(x)
+
+            # forward pass
+            logits = self.forward(x)
+            preds = torch.softmax(logits, dim=-1)
+
+        return preds
 
     def on_train_start(self):
         # by default lightning executes validation step sanity checks before training starts,

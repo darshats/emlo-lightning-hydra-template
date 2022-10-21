@@ -1,0 +1,12 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: default.yaml
+  - hydra: default.yaml
+  - model: cifar10.yaml # very important
+
+task_name: "demo_scripted"
+
+# checkpoint is necessary for demo
+ckpt_path:  /home/dshah/emlo-lightning-hydra-template/logs/train/cifar10/runs/2022-10-21_14-28-50/model.script.pt
