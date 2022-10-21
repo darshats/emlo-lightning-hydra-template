@@ -5,6 +5,7 @@ defaults:
   - paths: default.yaml
   - hydra: default.yaml
   - model: cifar10.yaml # very important
+  - trainer: default.yaml
 
 task_name: "demo_scripted"
 

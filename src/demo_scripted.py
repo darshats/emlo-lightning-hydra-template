@@ -39,8 +39,8 @@ def demo(cfg: DictConfig) -> Tuple[dict, dict]:
     # ckpt = torch.load('/home/dshah/emlo-lightning-hydra-template/logs/train/cifar10/runs/2022-10-21_14-28-50/checkpoints/epoch_009.ckpt')
     # model: LightningModule = hydra.utils.instantiate(cfg.model)
     # model.load_state_dict(ckpt["state_dict"])
-    # model.eval()
-    log.info(f"Loaded Model: {model}")
+    model.eval()
+    # log.info(f"Loaded Model: {model}")
 
     labels = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
@@ -65,7 +65,9 @@ def demo(cfg: DictConfig) -> Tuple[dict, dict]:
         live=True,
     )
 
-    demo.launch()
+    log.info(f'launching demo on port 8080!')
+    demo.launch(server_port=8080)
+    
 
 @hydra.main(
     version_base="1.2", config_path=root / "configs", config_name="demo_scripted.yaml"

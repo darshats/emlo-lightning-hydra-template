@@ -1,8 +1,9 @@
 # --------- pytorch --------- #
-torch==1.11.0
-torchvision==0.12.0
+http://download.pytorch.org/whl/cpu/torch-1.11.0%2Bcpu-cp38-cp38-linux_x86_64.whl
+torch==1.11.0+cpu
+#torchvision==0.12.0
 pytorch-lightning==1.7.1
-torchmetrics==0.9.3
+#torchmetrics==0.9.3
 
 # --------- hydra --------- #
 hydra-core==1.2.0
