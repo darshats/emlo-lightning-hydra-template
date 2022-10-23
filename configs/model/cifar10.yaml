@@ -8,4 +8,5 @@ optimizer:
 
 net:
   _target_: timm.create_model
-  model_name: resnet18
+  model_name: vit_base_patch32_224
+  pretrained: true
