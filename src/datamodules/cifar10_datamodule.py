@@ -52,7 +52,7 @@ class Cifar10DataModule(LightningDataModule):
 
         # data transformations
         self.transforms = transforms.Compose(
-            transforms.Resize(224),
+            transforms.Resize([256, ]),
             [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))]
         )
 
