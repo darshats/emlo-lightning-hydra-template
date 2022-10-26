@@ -32,3 +32,5 @@ Testing DataLoader 0: 100%|█████████████████�
 
 S3 model checkpoint: [s3://emlo-session6-distributedtraining/last_ddp.ckpt](https://emlo-session6-distributedtraining.s3.amazonaws.com/last_ddp.ckpt)
 
+Tensorboard train logs: https://tensorboard.dev/experiment/Vej6PCYLS5GGmnhVIrvbZA/#scalars&_smoothingWeight=0
+
