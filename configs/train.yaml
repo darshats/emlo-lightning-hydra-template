@@ -8,7 +8,7 @@ defaults:
   - model: cifar10.yaml
   - callbacks: default.yaml
   - logger: tensorboard.yaml # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
-  - trainer: ddp.yaml
+  - trainer: fsdp.yaml
   - paths: default.yaml
   - extras: default.yaml
   - hydra: default.yaml
