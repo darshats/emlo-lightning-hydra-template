@@ -30,5 +30,5 @@ Testing DataLoader 0: 100%|█████████████████�
 │         test/loss         │    0.7881848216056824     │
 └───────────────────────────┴───────────────────────────┘
 
-S3 model checkpoint: s3://emlo-session6-distributedtraining/last_ddp.ckpt
+S3 model checkpoint: [s3://emlo-session6-distributedtraining/last_ddp.ckpt](https://emlo-session6-distributedtraining.s3.amazonaws.com/last_ddp.ckpt)
 
