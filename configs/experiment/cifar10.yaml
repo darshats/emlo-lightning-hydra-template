@@ -7,7 +7,7 @@ defaults:
   - override /datamodule: cifar10.yaml
   - override /model: cifar10.yaml
   - override /callbacks: default.yaml
-  - override /trainer: ddp.yaml
+  - override /trainer: fsdp.yaml
 
 # all parameters below will be merged with parameters from default configurations set above
 # this allows you to overwrite only specified parameters
@@ -19,14 +19,14 @@ seed: 12345
 trainer:
   min_epochs: 10
   max_epochs: 30
-  gradient_clip_val: 0.5
+#  gradient_clip_val: 0.5
 
 model:
   optimizer:
     lr: 0.0001
 
 datamodule:
-  batch_size: 256
+  batch_size: 1024
 
 logger:
   wandb:

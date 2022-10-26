@@ -23,3 +23,4 @@ pytest          # tests
 # sh            # for running bash commands in some tests (linux/macos only)
 timm==0.6.7
 gradio==3.3.1
+fairscale==0.4.12
