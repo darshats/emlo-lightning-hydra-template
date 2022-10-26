@@ -31,3 +31,5 @@ Testing DataLoader 0: 100%|█████████████████�
 └───────────────────────────┴───────────────────────────┘
 
 S3 bucket endpoint: https://emlo-session6-distributedtraining.s3.amazonaws.com/last_fsdp.ckpt
+
+Tensorboard train logs: https://tensorboard.dev/experiment/X2wQ8aXyT02EEpVd0ndbcg/#scalars&_smoothingWeight=0
