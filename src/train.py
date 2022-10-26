@@ -105,14 +105,16 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
     log.info(f"Saving traced model to {cfg.paths.output_dir}/model.script.pt")
 
 
-    if cfg.get("test"):
-        log.info("Starting testing!")
+    if cfg.get("test") and os.getenv('NODE_RANK') == "0":
+        log.info("Starting testing on master!")
         ckpt_path = trainer.checkpoint_callback.best_model_path
         if ckpt_path == "":
             log.warning("Best ckpt not found! Using current weights for testing...")
             ckpt_path = None
         trainer.test(model=model, datamodule=datamodule, ckpt_path=ckpt_path)
         log.info(f"Best ckpt path: {ckpt_path}")
+    else:
+        log.info("Skip test on this node")
 
     test_metrics = trainer.callback_metrics
 
