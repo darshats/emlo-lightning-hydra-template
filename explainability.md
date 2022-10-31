@@ -85,5 +85,85 @@ GradCAM ![image](https://user-images.githubusercontent.com/56063876/199014908-0b
 
 GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199014938-52a56401-2dc5-4ada-9121-2cec14dd39f2.png)
 
-6) 
+
+
+6) Predicted cannon, (0.7962093949317932)
+IG ![image](https://user-images.githubusercontent.com/56063876/199015152-5c906170-9ed2-497a-a927-95c9ae745ad6.png)
+
+IG /w NT ![image](https://user-images.githubusercontent.com/56063876/199015200-10d7b8ab-7dac-447d-939d-8b23196902d7.png)
+
+Shap gradient ![image](https://user-images.githubusercontent.com/56063876/199015262-e612f728-518f-4ad6-81c5-40c54ae1f03e.png)
+
+Occlusion ![image](https://user-images.githubusercontent.com/56063876/199015299-00fd7b9c-844b-4485-848d-ac7945e90e33.png)
+
+Shap ![image](https://user-images.githubusercontent.com/56063876/199015328-39afa150-5c0e-4818-9e55-2fc2f2db21e1.png)
+
+GradCAM ![image](https://user-images.githubusercontent.com/56063876/199015361-914b5e2b-8de8-4843-9450-805c8bb69dd6.png)
+
+GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199015405-631ca0ae-3b0c-4323-9a2a-e2b9d46649cf.png)
+
+
+7) Predicted hen, (0.8744664788246155)
+IG ![image](https://user-images.githubusercontent.com/56063876/199015504-727f6c8d-96a9-472a-9cf0-48068c1532ca.png)
+
+IG /w NT ![image](https://user-images.githubusercontent.com/56063876/199015535-9095f1c8-e006-42a6-a115-e898fa2a7aa8.png)
+
+Shap gradient ![image](https://user-images.githubusercontent.com/56063876/199015578-1c704dae-df10-42c8-9e31-fb8127ef8ea5.png)
+
+Occlusion ![image](https://user-images.githubusercontent.com/56063876/199015602-9c08bcd7-200a-45bb-81e5-05d9e11887a4.png)
+
+Shap ![image](https://user-images.githubusercontent.com/56063876/199015645-48257272-2226-43e9-a709-025fe36ffa9c.png)
+
+GradCAM ![image](https://user-images.githubusercontent.com/56063876/199015678-091288b0-0c61-4a39-bd66-8efa57aa2aa2.png)
+
+GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199015711-b70e0aa4-3254-423a-b145-df9e5445cd5b.png)
+
+
+8) Predicted macaw, (0.9977763295173645)
+IG ![image](https://user-images.githubusercontent.com/56063876/199015797-09794a40-60fa-4491-ba63-0b89fe109945.png)
+
+IG /w NT ![image](https://user-images.githubusercontent.com/56063876/199015835-356e866d-e377-40a2-b9d0-95ff3412bdf7.png)
+
+Shap gradient ![image](https://user-images.githubusercontent.com/56063876/199015883-5482a33a-1ac2-4d03-ac9a-2ad45e6d11ef.png)
+
+Occlusion ![image](https://user-images.githubusercontent.com/56063876/199015946-183cd464-f163-4ce2-bfe9-4abb0d816658.png)
+
+Shap ![image](https://user-images.githubusercontent.com/56063876/199015980-956ea62e-3cfb-4d65-890b-a4039f41ea55.png)
+
+GradCAM ![image](https://user-images.githubusercontent.com/56063876/199016026-d7524ba9-c93a-4e5a-89ab-d38151fd1eda.png)
+
+GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199016065-8dec77b7-4d9f-4675-aca2-ba312c730c25.png)
+
+
+9) Predicted tiger, (0.6982722878456116)
+IG ![image](https://user-images.githubusercontent.com/56063876/199016140-866f3200-00dc-49b7-9822-84aebcfc9caf.png)
+
+IG /w NT ![image](https://user-images.githubusercontent.com/56063876/199016176-a7a08fac-aa3c-40e0-a600-9ba508cc7586.png)
+
+Shap gradient ![image](https://user-images.githubusercontent.com/56063876/199016205-9d0353d3-4ef6-49a7-9949-3b651c1d0927.png)
+
+Occlusion ![image](https://user-images.githubusercontent.com/56063876/199016229-032c59c4-37bb-45b3-8136-92a2616cc2c7.png)
+
+Shap ![image](https://user-images.githubusercontent.com/56063876/199016277-b6fd1a8c-15e8-41e8-8675-1e24169dd981.png)
+
+GradCAM ![image](https://user-images.githubusercontent.com/56063876/199016317-7832d0fc-779d-46a2-bece-3c105fca8b15.png)
+
+GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199016346-25558580-9101-42cd-948f-5f08fec365ad.png)
+
+
+10) Predicted zebra, (0.9988380074501038)
+IG ![image](https://user-images.githubusercontent.com/56063876/199016413-43a8dff6-a1a6-4c52-a254-c3a8814fbd18.png)
+
+IG /w NT ![image](https://user-images.githubusercontent.com/56063876/199016444-1ae44d00-c690-4d44-ac48-b90c0762075f.png)
+
+Shap gradient ![image](https://user-images.githubusercontent.com/56063876/199016489-2b451130-64bf-4356-b3cf-540a60d8cfbe.png)
+
+Occlusion ![image](https://user-images.githubusercontent.com/56063876/199016527-32fb6d99-ccf0-40db-8d37-74bde7f48389.png)
+
+Shap ![image](https://user-images.githubusercontent.com/56063876/199016566-448526a1-5c0e-44b6-adca-015db3d0d514.png)
+
+GradCAM ![image](https://user-images.githubusercontent.com/56063876/199016594-a66bd0e4-3062-459b-8d5f-419c8d9c365a.png)
+
+GradCAM++ ![image](https://user-images.githubusercontent.com/56063876/199016628-f9786183-2abe-4117-a8b0-4d4f80d0568f.png)
+
 
