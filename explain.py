@@ -165,7 +165,9 @@ transform_normalize = T.Normalize(
     mean=mean, std=std
 )
 
-for imgfile in ['Cat03.jpg']:
+for imgfile in ['Cat03.jpg', 'ambulance.jpg', 'balloon.jpg',
+                'bee.jpg', 'camel.jpg', 'cannon.jpg', 'hen.jpg',
+                'macaw.jpg', 'tiger.jpg', 'zebra.jpg']:
     img = Image.open(imgfile)
     transformed_img = transform(img)
     img_tensor = transform_normalize(transformed_img)
