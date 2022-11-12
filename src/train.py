@@ -100,10 +100,10 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
 
     log.info("Scripting Model ...")
 
-    # scripted_model = model.to_torchscript(method="script")
-    # torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/model.script.pt")
+    scripted_model = model.to_torchscript(method="script")
+    torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/cifar10.script.pt")
 
-    # log.info(f"Saving traced model to {cfg.paths.output_dir}/model.script.pt")
+    log.info(f"Saving traced model to {cfg.paths.output_dir}/cifar10.script.pt")
 
 
     if cfg.get("test") and os.getenv('NODE_RANK') == "0":
