@@ -27,3 +27,6 @@ fairscale
 captum
 shap
 grad_cam
+torchserve
+torch-model-archiver
+torch-workflow-archiver
