@@ -1,0 +1,1 @@
+For this assignment, I only have changes to add torch serve handlers, and to script out the cifar10 model. I was not able to get a proper .mar file and the pytorch/torchserve docker image was not able to start the torchserve process with that mmar
