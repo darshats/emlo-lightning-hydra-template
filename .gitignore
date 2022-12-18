@@ -152,3 +152,5 @@ logs/
 .autoenv
 /data
 /logs
+model_store/cifar10.script.pt
+cifar10.mar
